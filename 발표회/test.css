@@ -1,0 +1,55 @@
+.animate { transition: all .5s ease-in-out; }
+
+.thumb {
+  float: left;
+  height: auto;
+  margin: 0 10px 10px 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  font: 1em/1.2em Segoe UI, sans-serif;
+}
+.thumb { /*.link */
+  display: block;
+  position: relative;
+  overflow: hidden;  
+  width: 320px; height: 180px;
+}
+.thumb .image {
+  position: absolute;
+  width: 100%;
+}
+.thumb .blend {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  font-weight: normal;
+  background: rgba(91, 160, 239,0.8);
+  color: #fff; /* font color white color*/
+  transition-duration: .4s;
+}
+.thumb .head {
+  height: 1.2em;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+}
+.thumb .text {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  height: 8.5em; 
+  padding: .5em 10px;
+  font-size: .7em;
+}
+/*
+.thumb .link:hover .image {
+  left: -125%; top: -125%;
+  width: 300%;
+}*/
+.thumb .link:hover .blend {
+  height: 100%;
+}
+.thumb .link:hover .text {
+  display: block;
+}/*  
